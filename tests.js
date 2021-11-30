@@ -25,6 +25,12 @@ describe('sayHello', function () {
     it('should not return the undefined ', function () {
         expect(sayHello()).not.toBe('undefined');
     });
+    it('should return hello Jane', function () {
+        expect(sayHello(' Jane')).toEqual('hello Jane');
+    });
+    it('should return "hello Alex"', function () {
+        expect(sayHello(' Alex')).toEqual('hello Alex');
+    });
 });
 
 
